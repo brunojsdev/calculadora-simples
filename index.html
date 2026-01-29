@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculadora Simples</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator" role="application" aria-label="Calculadora simples">
+    <div class="display" id="display" aria-live="polite">0</div>
+
+    <div class="keys">
+      <button class="btn large" data-action="clear" aria-label="Limpar">C</button>
+      <button class="btn" data-action="backspace" aria-label="Apagar">←</button>
+      <button class="btn" data-value="%" aria-label="Porcento">%</button>
+      <button class="btn operator" data-value="/" aria-label="Dividir">÷</button>
+
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn operator" data-value="*" aria-label="Multiplicar">×</button>
+
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn operator" data-value="-" aria-label="Subtrair">−</button>
+
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn operator" data-value="+" aria-label="Somar">+</button>
+
+      <button class="btn wide" data-value="0">0</button>
+      <button class="btn" data-value=".">.</button>
+      <button class="btn equals" data-action="calculate" aria-label="Igual">=</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
